@@ -2,3 +2,21 @@
   margin: 3rem auto;
   max-width: 600px;
 }
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.headerTitleLink {
+  text-shadow: none;
+  background-image: none;
+}
+
+.headerTitle {
+  display: inline;
+}
+
+.headerList {
+  list-style: none;
+  float: right;
+}

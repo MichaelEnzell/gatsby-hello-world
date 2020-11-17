@@ -1,14 +1,12 @@
 import React from "react"
-import Header from "../components/header"
+import H1 from "../components/h1"
 import Container from "../components/container"
 import User from "../components/user"
-import { Link } from "gatsby"
 
 export default function Home() {
   return (
     <Container>
-      <Link to="/">Home</Link>
-      <Header headerText="Hello world!" />
+      <H1 headerText="Hello world!" />
       <p>What a world.</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       <User
