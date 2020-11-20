@@ -7,14 +7,21 @@
 module.exports = {
   siteMetadata: {
     title: `MySweetSite`,
-    homeText: 'Home',
-    homeLink: '/',
-    aboutText: 'About',
-    aboutLink: '/about/',
-    contactText: 'Contact',
-    contactLink: '/contact/',
+    homeText: "Home",
+    homeLink: "/",
+    aboutText: "About",
+    aboutLink: "/about/",
+    contactText: "Contact",
+    contactLink: "/contact/",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
