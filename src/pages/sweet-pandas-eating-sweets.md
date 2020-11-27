@@ -1,6 +1,9 @@
 ---
 title: "Sweet Pandas Eating Sweets"
 date: "2017-08-10"
+author: "Bob Smith"
+authorImage: ""
+authorDescription: "I'm Bob Smith, a vertically aligned type of guy."
 ---
 
 Pandas are really sweet.

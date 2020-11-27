@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import blogpostStyles from "./blogposts.module.css"
 
 export default function Blogposts() {
@@ -12,8 +12,12 @@ export default function Blogposts() {
             node {
               id
               frontmatter {
+                author
                 title
                 date(formatString: "DD MMMM, YYYY")
+              }
+              fields {
+                slug
               }
               excerpt
             }
@@ -28,11 +32,13 @@ export default function Blogposts() {
   return (
     <div>
       <h1 className={blogpostStyles.h1}>Blog posts</h1>
-      <h4 className={blogpostStyles.h4}>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h4 className={blogpostStyles.h4}>
+        {data.allMarkdownRemark.totalCount} Posts
+      </h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <h3 className={blogpostStyles.h3}>
-            {node.frontmatter.title}{" "}
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>{" "}
             <span className={blogpostStyles.date}>
               {" "}
               — {node.frontmatter.date}

@@ -7,7 +7,6 @@
 module.exports = {
   siteMetadata: {
     title: `MySweetSite`,
-    homeText: "Home",
     homeLink: "/",
     aboutText: "About",
     aboutLink: "/about/",
