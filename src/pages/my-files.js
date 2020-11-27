@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Container from "../components/container"
 
 export default function MyFiles({ data }) {
-  console.log(data)
   return (
     <Container>
       <div>
@@ -37,6 +36,22 @@ export default function MyFiles({ data }) {
 
 export const query = graphql`
   query {
+    allFile {
+      edges {
+        node {
+          name
+          relativePath
+          prettySize
+          extension
+          birthTime(fromNow: true)
+        }
+      }
+    }
+  }
+`
+/*
+export const query = graphql`
+  query {
     allFile(filter: { relativeDirectory: { eq: "pages" } }) {
       edges {
         node {
@@ -50,3 +65,4 @@ export const query = graphql`
     }
   }
 `
+*/

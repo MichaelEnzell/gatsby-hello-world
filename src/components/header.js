@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import containerStyles from "./header.module.css"
+import headerStyles from "./header.module.css"
 
 export default function Header() {
   const data = useStaticQuery(
@@ -20,14 +20,17 @@ export default function Header() {
       }
     `
   )
+
+  //console.log(data)
+
   return (
-    <header className={containerStyles.header}>
-      <Link to="/" className={containerStyles.headerTitleLink}>
-        <h3 className={containerStyles.headerTitle}>
+    <header className={headerStyles.header}>
+      <Link to="/" className={headerStyles.headerTitleLink}>
+        <h3 className={headerStyles.headerTitle}>
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <ul className={containerStyles.headerList}>
+      <ul className={headerStyles.headerList}>
         <ListLink to={data.site.siteMetadata.homeLink}>{data.site.siteMetadata.homeText}</ListLink>
         <ListLink to={data.site.siteMetadata.aboutLink}>{data.site.siteMetadata.aboutText}</ListLink>
         <ListLink to={data.site.siteMetadata.contactLink}>{data.site.siteMetadata.contactText}</ListLink>
@@ -37,7 +40,7 @@ export default function Header() {
 }
 
 const ListLink = props => (
-  <li className={containerStyles.headerListItem}>
+  <li className={headerStyles.headerListItem}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )

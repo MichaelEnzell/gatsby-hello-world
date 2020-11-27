@@ -2,6 +2,7 @@ import React from "react"
 import H1 from "../components/h1"
 import Container from "../components/container"
 import User from "../components/user"
+import Blogposts from "../components/blogposts"
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
         excerpt="I'm Bob Smith, a vertically aligned type of guy."
       />
+      <Blogposts>
+      </Blogposts>
     </Container>
   )
 }
