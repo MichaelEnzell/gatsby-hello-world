@@ -6,13 +6,12 @@ export default function Blogposts() {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
           totalCount
           edges {
             node {
               id
               frontmatter {
-                author
                 title
                 date(formatString: "DD MMMM, YYYY")
               }
@@ -31,18 +30,13 @@ export default function Blogposts() {
 
   return (
     <div>
-      <h1 className={blogpostStyles.h1}>Blog posts</h1>
-      <h4 className={blogpostStyles.h4}>
-        {data.allMarkdownRemark.totalCount} Posts
-      </h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <h3 className={blogpostStyles.h3}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>{" "}
-            <span className={blogpostStyles.date}>
-              {" "}
-              — {node.frontmatter.date}
-            </span>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <p className={blogpostStyles.date}>
+              {node.frontmatter.date}
+            </p>
           </h3>
           <p>{node.excerpt}</p>
         </div>

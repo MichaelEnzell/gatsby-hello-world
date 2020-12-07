@@ -12,8 +12,6 @@ export default function Header() {
             homeLink
             aboutText
             aboutLink
-            contactText
-            contactLink
           }
         }
       }
@@ -29,10 +27,6 @@ export default function Header() {
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <ul className={headerStyles.headerList}>
-        <ListLink to={data.site.siteMetadata.aboutLink}>{data.site.siteMetadata.aboutText}</ListLink>
-        <ListLink to={data.site.siteMetadata.contactLink}>{data.site.siteMetadata.contactText}</ListLink>
-      </ul>
     </header>
   )
 }

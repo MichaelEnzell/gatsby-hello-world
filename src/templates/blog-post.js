@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import User from "../components/user"
 import Container from "../components/container"
 
 export default function BlogPost({ data }) {
@@ -13,12 +12,6 @@ export default function BlogPost({ data }) {
 
                 </div>
             </div>
-            
-          <User
-            username={post.frontmatter.author}
-            avatar={post.frontmatter.authorImage}
-            excerpt={post.frontmatter.authorDescription}
-          />
         </Container>
     )
 }
@@ -29,9 +22,6 @@ export const query = graphql`
             html
             frontmatter {
                 title
-                author
-                authorImage
-                authorDescription
             }
         }
     }
