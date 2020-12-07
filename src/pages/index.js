@@ -7,7 +7,7 @@ export default function Home() {
     <Container>
       <div>
         <p>
-          Hello and welcome to Michael Enzell's comprehensive guide on how to build a gingerbread house from scratch.
+          Hello and welcome to Michael Enzell's comprehensive guide on how to build a gingerbread house from scratch with a broken gingerbread house kit.
           In this guide you will find everything you need to know, from how to acquire your materials to what to do if you accidentally smash everything with a hammer.
         </p>
         <p>
