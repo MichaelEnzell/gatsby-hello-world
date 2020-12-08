@@ -30,9 +30,10 @@ export default function Header() {
     </header>
   )
 }
-
+/*
 const ListLink = props => (
   <li className={headerStyles.headerListItem}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
+*/

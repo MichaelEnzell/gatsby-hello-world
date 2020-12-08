@@ -10,3 +10,10 @@ Despite all the mishaps I did have some fun, but soon I will eat all my progress
 
 I gave my house a crack in a litteral sense, and now that it's finished christmas may commence</br>
 I hope that you've all had a very good year, now lets make it better and pound a few beer
+
+<img src="https://herrochfru.enzell.se/wp-content/uploads/2020/12/IMG_0569.jpeg" alt="Stop, hammer time!" width="350px" style="margin-left: 25px;">
+<img src="https://herrochfru.enzell.se/wp-content/uploads/2020/12/IMG_0571.jpeg" alt="Let's get frosting" width="350px" style="margin-left: 50px;">
+
+<div>
+    <img src="https://herrochfru.enzell.se/wp-content/uploads/2020/12/IMG_0570.jpeg" alt="Broken gingerbread house pieces" style="display:block; margin-left: auto; margin-right: auto; width: 80%;">
+</div>
