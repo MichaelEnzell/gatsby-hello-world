@@ -3,7 +3,7 @@ title: "Step 5: Finishing touches"
 date: "2020-12-06"
 ---
 
-The foundation is done, the house can actually stand by itself and it's no longer in 100 different pieces, time for some decorations to make it look less ugly! Given that Santa has been in quarantine most of the year, it was really important to make sure he could get up to the chimney in order for him to crawl down it with all the presents.
+The foundation is done, the house can actually stand by itself and it's no longer in 100 different pieces, time for some decorations to make it look less ugly! Given that Santa has been in quarantine most of the year and has put on quite a bit of weight, it was really important to make sure he could get up to the chimney in order for him to crawl down it with all the presents. So a ladder and a chimney platform was made to help him out a bit.
 
 <img src="https://herrochfru.enzell.se/wp-content/uploads/2020/12/IMG_0566.jpeg" alt="Stop, hammer time!" width="350px" style="margin-left: 25px;">
 <img src="https://herrochfru.enzell.se/wp-content/uploads/2020/12/IMG_0565.jpeg" alt="Let's get frosting" width="350px" style="margin-left: 50px;">
